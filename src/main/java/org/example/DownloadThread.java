@@ -29,9 +29,6 @@ public class DownloadThread extends Thread {
 
 
         try {
-            //download logic
-            //Files.copy(new URL(this.file.getUrl()).openStream(), Paths.get(this.file.getPath()));
-
             URL url = new URL(this.file.getUrl());
             URLConnection urlConnection = url.openConnection();
             int fileSize = urlConnection.getContentLength();
@@ -49,23 +46,16 @@ public class DownloadThread extends Thread {
                 countByte = bufferedInputStream.read(data, 0, 1024);
                 if (countByte == -1) {
                     break;
-
                 }
-
                 fos.write(data, 0, countByte);
-
                 byteSum = byteSum + countByte;
-
                 if (fileSize > 0) {
                     per = (byteSum / fileSize * 100);
                     System.out.println(per);
                     this.file.setPer(per + "");
                     this.manager.updateUI(file);
                 }
-
-
             }
-
             fos.close();
             bufferedInputStream.close();
 

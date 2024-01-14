@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="JavaIDM" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="JAVA-IDM" target="11" />
+      <module name="JavaIDM" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

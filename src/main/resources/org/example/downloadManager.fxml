@@ -18,7 +18,7 @@
          <top>
             <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="25.0" BorderPane.alignment="CENTER">
                <children>
-                  <Text fill="#a63636" stroke="#cd2828" strokeType="OUTSIDE" strokeWidth="0.0" text="LCWD DOWNLOAD MANAGER">
+                  <Text fill="#a63636" stroke="#cd2828" strokeType="OUTSIDE" strokeWidth="0.0" text="JAVA IDM">
                      <font>
                         <Font name="Lato Black" size="36.0" />
                      </font>

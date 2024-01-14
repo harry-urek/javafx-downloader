@@ -6,15 +6,15 @@ import org.example.DownloadManager;
 
 public class FileInfo {
 
-    private SimpleStringProperty index = new SimpleStringProperty();
-    private SimpleStringProperty name = new SimpleStringProperty();
-    private SimpleStringProperty url = new SimpleStringProperty();
-    private SimpleStringProperty status = new SimpleStringProperty();
+    private final SimpleStringProperty index = new SimpleStringProperty();
+    private final SimpleStringProperty name = new SimpleStringProperty();
+    private final SimpleStringProperty url = new SimpleStringProperty();
+    private final SimpleStringProperty status = new SimpleStringProperty();
     //'DOWNLOADING' , "DONE", "STARTING"
-    private SimpleStringProperty action = new SimpleStringProperty();
+    private final SimpleStringProperty action = new SimpleStringProperty();
 
-    private SimpleStringProperty path = new SimpleStringProperty();
-    private SimpleStringProperty per=new SimpleStringProperty();
+    private final SimpleStringProperty path = new SimpleStringProperty();
+    private final SimpleStringProperty per=new SimpleStringProperty();
 
 
 
